@@ -91,3 +91,198 @@ EXO_______4__.intervertion
 		FIN_POUR 
 			
  	FIN_ALGORITHME
+5.Somme multiple______________________________________
+	FONCTIONS_UTILISEES
+
+	VARIABLES
+	SOMME EST_DU_TYPE NOMBRE
+	i EST_DU_TYPE NOMBRE
+	DEBUT_ALGORITHME
+
+   	
+	POUR i ALLANT_DE 0 A 30
+	DEBUT_POUR		
+		SOMME	PREND_LA_VALEUR i+SOMME	
+		AFFICHER i 
+		AFFICHER "+"
+		FIN_POUR
+			AFFICHER* " "
+			AFFICHER  "La somme des 30 premiers entiers est :"
+			AFFICHER SOMME
+	
+	FIN_ALGORITHME
+
+5-bis.Somme multiple personnalisé_______________________
+
+	FONCTIONS_UTILISEES
+	VARIABLES
+ 	 	SOMME EST_DU_TYPE NOMBRE
+  		i EST_DU_TYPE NOMBRE
+  		x EST_DU_TYPE NOMBRE
+	DEBUT_ALGORITHME
+  		AFFICHER "entrer une valeure"
+  		LIRE x
+  		POUR i ALLANT_DE 1 A x
+    		DEBUT_POUR 
+     			SOMME PREND_LA_VALEUR SOMME+i
+		FIN_POUR
+			AFFICHER "La somme des" ,x, "premiers entiers est :" 
+     	AFFICHER SOMME   
+	FIN_ALGORITHME
+
+
+
+
+
+6.Fontion pair__________________________
+
+	FONCTIONS_UTILISEES
+	VARIABLES
+  		x EST_DU_TYPE NOMBRE
+	DEBUT_ALGORITHME
+  		AFFICHER "entrer une valeure"
+  		LIRE x
+  		SI (x % 2==0) ALORS
+  		 DEBUT_SI
+  			AFFICHER "nombre pair"
+  	FIN_SI
+  	SINON
+  		DEBUT_SINON
+  			AFFICHER "nombre impair" 
+  		FIN_SINON
+	FIN_ALGORITHME
+
+
+7.Boucle pair_______________________________________________
+	FONCTIONS_UTILISEES
+	VARIABLES
+   	 x EST_DU_TYPE NOMBRE
+
+	DEBUT_ALGORITHME
+   	 POUR x ALLANT_DE 0 A 20 
+    	DEBUT_POUR
+        SI (x % 2 == 0) ALORS
+        	DEBUT_SI      
+            AFFICHER x
+            
+        FIN_SI
+       
+   	 FIN_POUR
+    
+	FIN_ALGORITHME
+8.Fonction pythagore___________________________________________
+FONCTIONS_UTILISEES
+VARIABLES
+   a EST_DU_TYPE NOMBRE
+   b EST_DU_TYPE NOMBRE
+   c EST_DU_TYPE NOMBRE
+
+DEBUT_ALGORITHME
+ 	AFFICHER "enter c"
+ 	LIRE c
+ 	AFFICHER "enter b"
+	LIRE b
+	a PREND_LA_VALEUR ((c*c) + (b*b))
+	a PREND_LA_VALEUR sqrt(a)
+ 	AFFICHER a
+    
+FIN_ALGORITHME
+
+9.Condition heure__________________________________________________________________
+
+
+	FONCTIONS_UTILISEES
+VARIABLES
+   h EST_DU_TYPE NOMBRE
+
+DEBUT_ALGORITHME
+    AFFICHER "Entrez l'heure (au format 24 heures) :"
+    LIRE h
+
+    SI (h <= 12) ALORS
+    	DEBUT_SI
+        AFFICHER "Le matin"
+        FIN_SI
+    SINON
+    DEBUT_SINON
+        SI (h > 12 ET h <= 18) ALORS
+        	DEBUT_SI
+   					 AFFICHER "L'après-midi"
+         FIN_SI
+     SINON
+     		 DEBUT_SINON
+
+            AFFICHER "Le soir"
+				FIN_SINON
+     FIN_SINON   
+FIN_ALGORITHME
+
+
+	
+11.Table des multiplications_____________________________________________
+
+
+	FONCTIONS_UTILISEES
+
+		VARIABLES
+			x EST_DU_TYPE NOMBRE
+			n EST_DU_TYPE NOMBRE
+			i EST_DU_TYPE NOMBRE
+		DEBUT_ALGORITHME
+		POUR x ALLANT_DE 0 A 9 
+			DEBUT_POUR
+				POUR i ALLANT_DE 0 A 9  
+					DEBUT_POUR
+ 						n PREND_LA_VALEUR (x*i)
+ 							AFFICHER n
+ 							AFFICHER " "
+
+ 					FIN_POUR
+ 				AFFICHER* " " 
+			FIN_POUR
+
+	
+	FIN_ALGORITHME
+
+
+10.FooBar______________________________________________________
+
+
+
+FONCTIONS_UTILISEES
+
+VARIABLES
+	x EST_DU_TYPE NOMBRE
+	n EST_DU_TYPE NOMBRE
+	i EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+	POUR x ALLANT_DE 0 A 9 
+	DEBUT_POUR
+	POUR i ALLANT_DE 0 A 9  
+		DEBUT_POUR
+		   SI (x==5 ET i==3) ALORS 
+			DEBUT_SI
+				AFFICHER "foobar"
+			FIN_SI
+		SI (x==3 OU i==3) ALORS 
+		DEBUT_SI
+			AFFICHER "foo"
+		FIN_SI
+		SI (i==5 OU i==5) ALORS 
+		DEBUT_SI
+			AFFICHER "bar"
+		FIN_SI
+		SINON 
+		DEBUT_SINON
+			 n PREND_LA_VALEUR (x*i)
+			 AFFICHER n
+ 			AFFICHER " "
+		FIN_SINON
+
+ FIN_POUR
+ AFFICHER* " " 
+FIN_POUR
+
+	
+FIN_ALGORITHME
+
